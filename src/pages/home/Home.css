@@ -1,0 +1,86 @@
+:root {
+    /* --startColor: hsl(0, 100%, 75%);
+    --stopColor: hsl(0, 100%, 75%); */
+}
+
+.home-wrapper{
+    width: 100vw;
+    height: auto;
+    min-height: calc(100vh - 164px);
+    /* background-color: blue; */
+}
+
+.home-container{
+    width: calc(100% - 20px);
+    max-width: var(--MAX_WIDTH);
+    padding: 10px;
+    height: auto;
+    /* background-color: red; */
+    position: relative;
+}
+.home-container > .article{
+    width: 40%;
+    font-size: 1.4em;
+    /* background-color: blue; */
+}
+.home-container > .article > span{
+    font-family: slim;
+    letter-spacing: 1.2px;
+    line-height: 1.5em;
+}
+.home-container > .article > span > b{
+    font-weight: 400;
+}
+.home-container > .article > a{
+    text-decoration: none;
+}
+
+#slime_svg {
+    width:90vw;
+    max-width: 500px;
+    height:90vw;
+    max-height: 500px;
+}
+
+#slime_svg path {
+    cursor: pointer;
+}
+/* #slime_svg text{
+    color: white;
+    fill: white;
+} */
+
+.svgContainer{
+    height: auto;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 767px) { /* mobile */
+
+    .home-container{
+        width: calc(100% - 20px);
+        max-width: var(--MAX_WIDTH);
+        padding: 10px;
+        height: auto;
+        /* background-color: red; */
+        position: relative;
+        flex-direction: column-reverse;
+    }
+    .home-container > .article{
+        width: calc(100% - 20px);
+        font-size: 1.4em;
+        /* background-color: blue; */
+    }
+  
+}
+  
+
+
+

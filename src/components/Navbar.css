@@ -1,0 +1,128 @@
+/* navbar styles */
+.navbar {
+  width: calc(100% - 20px);
+  /* border-bottom: 1px solid rgba(0, 0, 0, 0.1); */
+  /* background: red; */
+}
+.navbar > .container{
+  width: calc(100% - 100px);
+  padding: 20px 50px;
+
+  position: relative;
+}
+.navbar > .container .logo{
+  height: 80%;
+  max-height: 80%;
+  width: 150px;
+  /* background-color: red; */
+}
+.navbar > .container > .right > a{
+  text-decoration: none;
+  color: inherit;
+  margin: 0px 10px;
+  padding: 0px 10px;
+  font-size: var(--NAV_TS);
+}
+.navbar > .container > .right > a.active{
+  /* color: var(--MAIN_COLOR); */
+  border-bottom: thin solid var(--MAIN_COLOR);
+  
+  background-color: black;
+  
+  background-image: var(--MAIN_BACKGROUND);
+  
+  background-size: 100%;
+  background-repeat: repeat;
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+.esveegee{
+  height: 100%;
+  width: 150px;
+}
+
+
+
+
+.f1{
+animation: float1 20s ease-in-out infinite;
+animation-delay: 0s;
+}
+.f2{
+animation: float1 20s ease-in-out infinite;
+animation-delay: 0.5s;
+}
+.f3{
+animation: float1 20s ease-in-out infinite;
+animation-delay: 1s;
+}
+.f4{
+animation: float1 20s ease-in-out infinite;
+animation-delay: 1.5s;
+}
+.f5{
+animation: float1 20s ease-in-out infinite;
+animation-delay: 2s;
+}
+.f6{
+animation: float1 20s ease-in-out infinite;
+animation-delay: 2.5s;
+}
+.f7{
+animation: float1 20s ease-in-out infinite;
+animation-delay: 3s;
+}
+
+@keyframes float1 {
+0% {
+  transform: translatey(0px);
+}
+3% {
+  transform: translatey(-10px);
+}
+9% {
+  transform: translatey(10px);
+}
+12% {
+  transform: translatey(0px);
+}
+}
+
+
+@media (max-width: 767px) { /* mobile */
+
+  :root{
+    --NAV_TS: 1em;
+  }
+
+
+  .navbar > .container{
+    width: calc(100%);
+    padding: 10px 0px;
+    position: relative;
+  }
+  .esveegee{
+    height: 100%;
+    width: 120px;
+  }
+  .navbar > .container > .right{
+    width: 100%;
+    margin-top: 20px;
+  }
+  .navbar > .container > .right > a{
+    text-decoration: none;
+    color: inherit;
+    margin: 0px;
+    font-size: var(--NAV_TS);
+    padding: 0px 10px;
+    white-space: nowrap;
+  }
+  
+  
+
+}

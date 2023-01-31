@@ -1,0 +1,64 @@
+.contact-container{
+    width: 100%;
+    min-width: 350px;
+    /* background-color: red; */
+    margin: 20px 0px;
+    min-height: calc(100vh - 204px);
+}
+
+.contact-container h1,
+.contact-container h2,
+.contact-container h3,
+.contact-container h4,
+.contact-container h5,
+.contact-container h6{
+    padding: 0px;
+    margin: 0px 20px;
+    text-decoration: none;
+    /* background-color: red; */
+}
+.contact-container a{
+    text-decoration: none;
+    color: grey;
+    font-family: slim;
+}
+
+.contact-container p{
+    width: calc(100% - 40px);
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.contact-container h1{
+    width: 100%;
+    text-align: center;
+    align-self: center;
+    
+}
+
+
+.contact-container form{
+    width: calc(100% - 40px);
+    max-width: 450px;
+}
+.contact-container input,
+.contact-container textarea{
+    width: calc(100% - 40px);
+    padding: 5px 10px;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 767px) { /* mobile */
+    
+    .contact-container > .title{
+        font-size: 1.4em;
+    }
+  
+}
